@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.input-field {
+  border: none; /* 테두리 제거 */
+  background-color: inherit; /* 부모 td의 배경색을 따르게 설정 */
+  width: 100%; /* 필요한 경우, input 필드의 너비를 100%로 설정 */
+}
+
+.input-field:focus {
+  outline: none; /* 포커스 시 outline 제거 */
+}
+input{
+  text-align: center;
+}

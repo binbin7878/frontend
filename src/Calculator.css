@@ -1,0 +1,102 @@
+
+  /* 전체 테이블 스타일 */
+.grade-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+/* 테이블 헤더 스타일 */
+.grade-table thead {
+  background-color: #c6f0b9d3;
+}
+
+.grade-table th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+/* 테이블 내용 셀 스타일 */
+.grade-table td {
+  padding: 8px;
+  border: 1px solid #dddddd;
+}
+
+/* 합계 행 강조 */
+.grade-table .total td {
+  background-color: #f2ffdb;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 각 성적 열 색상 (성적 기준) */
+.grade-table td:last-child {
+  font-weight: bold;
+}
+
+/* 성적별 색상 */
+
+
+/* 강조된 테두리 (합계) */
+.grade-table .total {
+  background-color: #ffeb3b;  /* 합계 행 배경색 */
+}
+
+/* 스크롤을 위한 테이블 */
+.grade-table {
+  table-layout: fixed;
+}
+
+/* 셀 안의 내용 중앙 정렬 */
+.grade-table th, .grade-table td {
+  text-align: center;
+}
+
+/* 버튼 스타일 (추가, 삭제, 저장) */
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+input{
+  border: none;
+}
+.input-field {
+  
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* focus 상태일 때 스타일 */
+.input-field:focus {
+  border-color: #4CAF50;
+  background-color: #f1f8f3;
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox  */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
